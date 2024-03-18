@@ -1,4 +1,3 @@
-
         $(document).ready(() => {
             $('#convertButton').on('click', () => {
                 const element = document.getElementById('reviewAssignment');
@@ -98,5 +97,5 @@
         }
    
     if (document.referrer !== "https://enockofficial.github.io/home/index.html" && document.referrer !== "") {
-            window.location.href = "https://enockofficial.github.io/SMG-OFFICE-2024/login.php.html";
+        window.location.href = "https://enockofficial.github.io/SMG-OFFICE-2024/login.php.html";
         }
