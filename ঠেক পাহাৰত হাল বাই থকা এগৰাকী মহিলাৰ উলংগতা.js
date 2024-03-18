@@ -1,4 +1,4 @@
- <script>
+
         $(document).ready(() => {
             $('#convertButton').on('click', () => {
                 const element = document.getElementById('reviewAssignment');
