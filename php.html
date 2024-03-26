@@ -667,7 +667,7 @@ form .button {
             <p><strong class="jibu">Reference</strong><br><span id="reviewReference"></span></p>
             <p><span id="reviewUploadFile"></span></p>
         </div>
-        <div class="fooster">Page <span class="pageNumber"></span></div> <!-- Added -->
+       
     </div>
 
     <br><br><br><br>
@@ -692,6 +692,17 @@ form .button {
 
          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+   
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function() {
   var maxHeight = 250; // Maximum height in pixels
   var $container = $('#naitaji');
@@ -909,13 +920,13 @@ $(document).ready(() => {
         html2pdf()
             .from(element)
             .set({
-                margin: [10, 0.5, 30, 0.5], // top, right, bottom, left
+                margin: [40, 0.5, 40, 0.5], // top, right, bottom, left
             })
             .toPdf()
             .get('pdf')
             .then(function(pdf) {
                 const totalPages = pdf.internal.getNumberOfPages();
-                const footerHeight = 20; // Adjust footer height as needed
+                const footerHeight = 30; // Adjust footer height as needed
                 const paragraphSpacing = 10; // Adjust paragraph spacing as needed
                 const pageWidth = pdf.internal.pageSize.getWidth();
                 const pageHeight = pdf.internal.pageSize.getHeight();
@@ -923,11 +934,11 @@ $(document).ready(() => {
                 // Loop through each page
                 for (let i = 1; i <= totalPages; i++) {
                     pdf.setPage(i);
-                    pdf.setFontSize(8);
+                    pdf.setFontSize(12);
                     pdf.setTextColor(100);
                     
                     // Add space before footer
-                    pdf.text('', 10, pageHeight - footerHeight - paragraphSpacing);
+                    pdf.text('', 0, pageHeight - footerHeight - paragraphSpacing);
                     
                     // Add footer text
                     pdf.text('Page ' + i + ' of ' + totalPages, pageWidth / 2, pageHeight - footerHeight, {
@@ -1074,6 +1085,8 @@ $(document).ready(() => {
 
     // Call reviewInformation function initially to populate review section
     reviewInformation();
+
+
 
           window.onload = function() {
     // Angalia ikiwa ukurasa umeingiwa moja kwa moja kutoka "home.page"
