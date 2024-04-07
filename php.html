@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Toggle Menu</title>
+<title>ASSIGNMENT FORM</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Add FontAwesome for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -19,8 +19,20 @@
      
 body {
   font-family: Times New Roman, Times, serif;
-  margin: 0;
+ margin: 0;
   padding: 0;
+
+
+
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url('https://thumbs.dreamstime.com/b/wall-backgrounds-16268126.jpg');
+    /* Weka background-size kama 'cover' ili picha itoshe kwenye kila aina ya screen */
+    background-size: cover;
+    /* Weka background-position kati ili kuhakikisha nyumba iko katikati ya ukurasa */
+    background-position: center;
+    /* Weka background repeat ikiwa 'no-repeat' ili picha isirejee kwa aina yoyote ya screen */
+  background-repeat: no-repeat; 
+  overflow-x: hidden;
+    background-attachment: fixed;
 }
     /* Prevent certain elements from being affected by font changes */
     button, label, option {
@@ -51,15 +63,20 @@ body {
             font-size: 18px;
             text-align: center;
         }
+        .kichwa1 {
+            font-size: 2px;
+            text-align: center;
+        }
          
         .login-container {
-    max-width: 90%;
+    max-width: 85%;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
+    background-color: white;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 23, 45, 0.9);
-    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.9);
+
+   /* font-size: 14px;*/
     color: #333;
     position: relative; /* Added */
 }
@@ -100,16 +117,53 @@ body {
   }
 }
 
+     .conver {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #1587EE;
+        color: white;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: auto;
+        border: none;
+    border-radius: 5px;
+    }
+    .conver:hover {
+        background-color: green;
+    }
+
+        .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 
   
-   #menu-left, #menu-right {
+   #menu-left, #menu-right, #popup-button {
     position: fixed !important;
     background-color: #1587EE;
     color: #f2f2f2;
     padding: 10px 10px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
     z-index: 9999;
   }
+ #popup-button {
+    top: 20px;
+    left: 38%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), 
+               url('https://i.pinimg.com/originals/a0/90/e6/a090e6557a0c70a4938438eea09bc44d.gif');
+               overflow-x: hidden;
+    background-attachment: fixed;
+   border: 1px solid #ced4da;
+    border-radius: 5px;
+ }
+
   #menu-left {
     top: 20px;
     left: 20px;
@@ -136,7 +190,7 @@ body {
 
 
   .form-container1 {
-    display: none; /* Initially hidden */
+   /* display: none; /* Initially hidden */
    /* position: fixed;  */
     top: 50%;
     left: 50%;
@@ -224,7 +278,7 @@ span {
     .editor {
         margin-bottom: 20px;
     }
-    .editor-buttons {
+   .editor-buttons {
         margin-bottom: 10px;
         display: flex;
         flex-wrap: wrap;
@@ -254,7 +308,7 @@ span {
         display: none;
     }
     #editorContent {
-        border: 1px solid #ccc;
+        border: 1px solid skyblue;
         background-color: #ECECEC;
     }
 
@@ -361,13 +415,14 @@ span {
  width: 310px;
 }
 
-button {
+ #naitaji button {
   display: block;
   width: calc(100% - 10px); /* Adjusted width to accommodate space */
   height: 25px; /* Set height */
   line-height: 15px; /* Center text vertically */
   margin-bottom: 5px; /* Add space between buttons */
 }
+
 
 
 
@@ -390,25 +445,60 @@ button {
 }
 
       
-     form button {
-            background-color: #3498db;
+/*===================== test ==================*/
+
+   /*  form button {
+    /*        background-color: #3498db;
             color: #fff;
             padding: 10px 105px;
             border: none;
-            cursor: pointer;
-            border-radius: 4px;
+         /*   cursor: pointer; */
+     /*       border-radius: 4px;
             font-size: 16px;
             align-items: center;
   width: calc(100% - 10px); /* Adjusted width to accommodate space */
-  height: 25px; /* Set height */
-  line-height: 15px; /* Center text vertically */
- }
+  /*height: 25px; /* Set height */
+ /* line-height: 15px; /* Center text vertically */
+/*}
 
  form button:hover {
     
     background-color: #1A73E5;
     color: whitesmokes; 
-}
+}*/
+
+
+ 
+      form button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #1587EE;
+        color: white;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: auto;
+        border: none;
+    border-radius: 5px;
+    }
+    form button:hover {
+        background-color: green;
+    }
+
+        .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+/*===================== test ==================*/
+
+
+
+
+
+
 
       form label {
     display: block;
@@ -418,8 +508,9 @@ button {
 }
 
 
-        form h1 {
+        form h2 {
             color: #3498db;
+            text-align: center;
         }
 
   form input,
@@ -451,22 +542,166 @@ form .button {
     border-radius: 4px;
     font-size: 16px;
 }
+*/
+
+.wewee {
+    display: flex;
+    flex-direction: column;
+   /* align-items: flex-end;  Unaweza kutumia 'flex-start' badala ya 'flex-end' kama unataka vitu vionekane upande wa kushoto */
+}
+
+#reviewMemberTable {
+    margin-top: 20px; /* Kuongeza nafasi kati ya div na table */
+}
+
+ p {
+            margin-top: 0; /* Kuweka margin-top kuwa sifuri ili kuzuia nafasi kutoka juu ya kila kipengee cha <p> */
+             padding: -1000;
+        }
 
 
+        /*=======================Popup======================*/
+            /* Styles for the call-to-action area */
+    .call-to-action-area {
+        text-align: center;
+        margin-top: 18px;
+    }
+
+    /* Styles for the button */
+  /*  .btn1 {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+         position: fixed !important;
+         z-index: 9999;
+    }  */
+
+    .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Styles for the popup form */
+    .popup-form {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), 
+               url('https://i.pinimg.com/originals/a0/90/e6/a090e6557a0c70a4938438eea09bc44d.gif');
+               overflow-x: hidden;
+    background-attachment: fixed;
+        padding: 18px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        z-index: 1000;
+ box-shadow: 0px 0px 9px rgba(0,0,0,0.9);
+  overflow: hidden;
+    }
+
+
+
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#answer-button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+}
+
+#copy-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer; 
+}
+
+.styled-response {
+    margin-top: 20px;
+}
+
+.styled-response-box {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
 
 </style>
 </head>
 <body>
 
-<div id="menu-left" onclick="toggleNav()">⚙️ EDIT</div>
-<div id="menu-right" onclick="toggleForm()">🔊 TAARIFA</div>
+
+
+<div id="menu-left" onclick="toggleNav()"><i class="fas fa-cog"></i> EDIT</div>
+<div id="menu-right" onclick="toggleForm()"><span class="emoji">&#128266;</span>
+ TAARIFA</div>
+
+
+
+<div class="call-to-action-area">
+    <button id="popup-button" class="btn1">
+        <i class="fas fa-robot"></i> SMG Ai
+    </button>
+    <div class="popup-form" id="popup-form">
+    <div class="form-group">
+                <textarea type="text" class="form-control" id="user-question" placeholder="Ask a question" rows="5" cols="100"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="answer-button" class="btn btn-large">
+                   <i class="fas fa-mouse-pointer"></i> Click Answer
+                </button>
+            </div>
+
+
+            <div class="form-group" style="position: relative;">
+                <textarea class="form-control" id="chatgpt-response" placeholder="Response" rows="12" cols="100" resize="none" readonly="true"></textarea>
+                <center> <button id="copy-btn"><i class="fas fa-copy"> </i><b>Copy</b></button>
+            </div>
+
+
+<br><button id="close-popup" class="btn"><i class="fas fa-eye-slash"></i> Hide</button>
+    </div>
+</div>
+
 
 
 
 
 <div id="form-container" >
     <div id="Assignment" style="; display: none;">
-  <form  class="form-container" style="margin-top: 20%">
+  <form  class="swali10" style="margin-top: 20%">
     <!-- Your form content here -->
     
             <h2>Group Assignment Form</h2>
@@ -476,9 +711,9 @@ form .button {
                 <option>TANZANIA INSTITUTE OF ACCOUNTANCY</option>
                 <option>UNIVERSITY OF DODOMA</option>
                 <option>UNIVERSITY OF DAR ES SALAAM</option>
-                <option>DUCE</option>
-                <option>NIT</option>
-                <option>CBE</option>
+                <option style="display:none;">DAR ES SALAAM UNIVERSTY COLLEGE OF EDUCATION</option>
+                <option>NATIONAL INSTITUTE OF TRANSPORT</option>
+                <option>COLLEGE OF BUSINESS EDUCATION</option>
             </select>
             <label for="cause">2. Course:</label>
             <input oninput="this.value = this.value.toUpperCase()" placeholder="example....BTCA,BTCPLM etc. your class"
@@ -510,42 +745,43 @@ form .button {
             <br><br>
             <label for="lectureName">7. Lecture Name:</label>
             <select id="is">
-                <option>Miss.</option>
-                <option>Mr.</option>
-                <option>Prof.</option>
-                <option>Sir.</option>
-                <option>Dr.</option>
-                <option>Hon.</option>
-                <option>Dean.</option>
-                <option>Chancellor.</option>
-                <option>Principal.</option>
-                <option>Vice-Chancellor.</option>
-                <option>Assistant Professor.</option>
-                <option>Associate Professor.</option>
+                  <option>Miss.</option>
+                   <option>Mr.</option>
+                   <option>Prof.</option>
+                   <option>Sir.</option>
+                   <option>Dr.</option>
+                   <option>Hon.</option>
+                   <option>Dean.</option>
+                   <option>Chancellor.</option>
+                   <option>Principal.</option>
+                   <option>Vice-Chancellor.</option>
+                   <option>Asst. Prof.</option>
+                   <option>Assoc. Prof.</option>
             </select>
             <input type="text" id="lectureName" name="lectureName" oninput="this.value = this.value.toUpperCase()">
 
             <br><br>
             <p>8. Group Members:</p>
-            <div id="memberForm">
-                <label for="memberName">Member Name:</label>
-                <input type="text" id="memberName" oninput="this.value = this.value.toUpperCase()"><br>
-                <label for="registrationNumber">Registration Number:</label>
-                <input type="text" id="registrationNumber" oninput="this.value = this.value.toUpperCase()"><br>
-                <button class="buttonA" type="button" onclick="addMember()">Add Member</button>
-            </div>
-            <br><br><br>
-            <table id="memberTable">
-                <tr>
-                    <th>Group Member</th>
-                    <th>Registration Number</th>
-                </tr>
-                </table>
-                <br><br>
-                <label for="reference">9. Reference:</label>
-            <input class="reference" type="text" id="reference" name="reference">
-         <br><br>
-            <button class="buttonA" type="button" onclick="reviewInformation()">Submit</button>
+            <div id="memberForm" style="border: 2px solid skyblue; padding: 10px;">
+    <label for="memberName">Member Name:</label>
+    <input type="text" id="memberName" oninput="this.value = this.value.toUpperCase()"><br>
+    <label for="registrationNumber">Registration Number:</label>
+    <input type="text" id="registrationNumber" oninput="this.value = this.value.toUpperCase()"><br>
+    <button class="buttonA" type="button" onclick="addMember()"><i class="fas fa-user"></i> Click here to Add</button>
+</div>
+
+<br><br><br>
+
+<table id="memberTable">
+    <tr>
+        <th>Group Member</th>
+        <th>Registration Number</th>
+    </tr>
+</table>
+
+<br><br> <br><br><br><br><br><br>
+
+            <button style="display: flex;" class="buttonA" type="button" onclick="reviewInformation()"> 🧾 <b>Click here to Submit</b></button>
         </b>
     </form>
 </div></div>
@@ -621,9 +857,9 @@ form .button {
 </div></div>
 
 
-<div  style="margin-top: 50%; " class="swali10">
+<div  style="margin-top: 30%; " class="swali10">
 <p><b>10: ANDIKA SWALI NA JIBU</b></p >
-<div id="editorContent" contenteditable="true"></div>
+<div id="editorContent" contenteditable="true" oninput="updatePreview()"></div>
 </form>
 </div>
 
@@ -646,8 +882,9 @@ form .button {
     <div id="reviewAssignment" class="login-container" style="display: none;">
         <div class="wewee">
             <br>
-            <p class="kichwa"><strong><span id="reviewSchoolName"></span></strong></p>
-            <div class="kichwa" id="schoolImage"></div>
+            <p  style="font-Size:13px;" class="kichwa"><strong><span id="reviewSchoolName"></span></strong></p>
+           <div  class="kichwa1" id="schoolImage"></div>
+           <div style="font-Size:12px;">
             <p><strong><span id="reviewCause"></span> <span id="reviewMuda"></span></strong></p>
             <p><span id="reviewLogo"></p>
             <p><strong>DATE   : </strong><span id="reviewDate"></span></p>
@@ -660,435 +897,22 @@ form .button {
             <table id="reviewMemberTable">
                 <!-- Reviewed member information will be displayed here -->
             </table>
-            <br><br><br>
-          
-        <p><span id="preview"></span></p>
-   
-            <p><strong class="jibu">Reference</strong><br><span id="reviewReference"></span></p>
-            <p><span id="reviewUploadFile"></span></p>
         </div>
-       
+            </div>
+            <p><span id="preview"></span></p>  
+        
     </div>
 
     <br><br><br><br>
 
-    <div class="wewee">
-        <button type="button" id="convertButton">Convert to PDF</button>
+    <div class="button-container">
+        <button class="conver" type="button" id="convertButton"><i class="fas fa-download"></i> Save to PDF</button>
     </div>
 
     <br><br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
 
          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-   
 
-
-
-
-
-
-
-
-
-
-$(document).ready(function() {
-  var maxHeight = 250; // Maximum height in pixels
-  var $container = $('#naitaji');
-  var $buttons = $container.find('button');
-  
-  var totalHeight = 0;
-  $buttons.each(function() {
-    totalHeight += $(this).outerHeight(true); // Calculate total height including padding and margin
-  });
-  
-  if (totalHeight > maxHeight) {
-    $container.css('max-height', maxHeight + 'px');
-    $container.css('overflow-y', 'auto');
-  }
-});
-
-
-           
-
-
-
-
-     // Undo and Redo Functionality
-  var editorContent = document.getElementById('editorContent');
-  var undoStack = [];
-  var redoStack = [];
-
-  function saveState() {
-    undoStack.push(editorContent.innerHTML);
-    redoStack = [];
-  }
-
-  function undoTextEditing() {
-    if (undoStack.length > 1) {
-      redoStack.push(undoStack.pop());
-      editorContent.innerHTML = undoStack[undoStack.length - 1];
-    }
-  }
-
-  function redoTextEditing() {
-    if (redoStack.length > 0) {
-      undoStack.push(redoStack.pop());
-      editorContent.innerHTML = undoStack[undoStack.length - 1];
-    }
-  }
-
-  editorContent.addEventListener('input', saveState);
-
-
-
-
-
-
-
-    //------ font size style -------//
-function applyFontStyle() {
-    var selectedFont = document.getElementById("fontFamily").value;
-    document.body.style.fontFamily = selectedFont + ', sans-serif';
-}
-
-function applyFontSize() {
-    var selectedSize = document.getElementById("fontSize").value;
-    document.body.style.fontSize = selectedSize + 'px';
-}
-
-function applyLineSpacing() {
-    var selectedSpacing = document.getElementById("lineSpacing").value;
-    document.body.style.lineHeight = selectedSpacing;
-}
-
-
-
-  function toggleNav() {
-    var nav = document.getElementById("nav");
-    var menuLeft = document.getElementById("menu-left");
-
-    if (nav.style.display === "none") {
-      nav.style.display = "block";
-      menuLeft.innerHTML = "❌ FICHA EDIT";
-    } else {
-      nav.style.display = "none";
-      menuLeft.innerHTML = "EDIT ❕";
-    }
-  }
-
-  function toggleForm() {
-    var form = document.getElementById("Assignment");
-    var menuRight = document.getElementById("menu-right");
-
-    if (form.style.display === "none") {
-      form.style.display = "block";
-      menuRight.innerHTML = "❌ FICHA TAARIFA";
-    } else {
-      form.style.display = "none";
-      menuRight.innerHTML = "TAARIFA ❕";
-    }
-  }
-
-
-
-
-
-
-
-
-
-// - - - - - - FUNCTIONALLY - - - - - - - //
-
-function formatText(command, value = null) {
-    var editorContent = document.getElementById('editorContent');
-    var text = window.getSelection().toString();
-
-    switch (command) {
-        case 'bold':
-            document.execCommand('bold', false, null);
-            break;
-        case 'italic':
-            document.execCommand('italic', false, null);
-            break;
-        case 'underline':
-            document.execCommand('underline', false, null);
-            break;
-        case 'strikethrough':
-            document.execCommand('strikethrough', false, null);
-            break;
-        case 'subscript':
-            document.execCommand('subscript', false, null);
-            break;
-        case 'superscript':
-            document.execCommand('superscript', false, null);
-            break;
-        case 'highlight':
-            var color = prompt('Enter highlight color:');
-            document.execCommand('hiliteColor', false, color);
-            break;
-        case 'color':
-            var color = prompt('Enter text color:');
-            document.execCommand('foreColor', false, color);
-            break;
-        case 'uppercase':
-            document.execCommand('insertText', false, text.toUpperCase());
-            break;
-        case 'lowercase':
-            document.execCommand('insertText', false, text.toLowerCase());
-            break;
-        case 'clear':
-            document.execCommand('removeFormat', false, null);
-            break;
-        case 'bullets':
-            document.execCommand('insertUnorderedList', false, null);
-            break;
-        case 'numbering':
-            document.execCommand('insertOrderedList', false, null);
-            break;
-        case 'indent':
-            document.execCommand('indent', false, null);
-            break;
-        case 'outdent':
-            document.execCommand('outdent', false, null);
-            break;
-        case 'alignleft':
-            document.execCommand('justifyLeft', false, null);
-            break;
-        case 'aligncenter':
-            document.execCommand('justifyCenter', false, null);
-            break;
-        case 'alignright':
-            document.execCommand('justifyRight', false, null);
-            break;
-        case 'justify':
-            document.execCommand('justifyFull', false, null);
-            break;
-        case 'fontFamily':
-            document.execCommand('fontName', false, value);
-            break;
-        case 'fontSize':
-            document.execCommand('fontSize', false, value);
-            break;
-        case 'lineSpacing':
-            editorContent.style.lineHeight = value;
-            break;
-    }
-
-    updatePreview();
-}
-
-function updatePreview() {
-    var preview = document.getElementById('preview');
-    var editorContent = document.getElementById('editorContent');
-    preview.innerHTML = editorContent.innerHTML;
-}
-
-// Adding event listener to update preview on input
-document.getElementById('editorContent').addEventListener('input', updatePreview);
-
-
-
-
-
-
-
-
-
-
-//------------------------------------------------------------//
-//-----------------------assignment pdf-----------------------//
-//------------------------------------------------------------//
-
-
-$(document).ready(() => {
-    $('#convertButton').on('click', () => {
-        const element = document.getElementById('reviewAssignment');
-        if (!element) return;
-
-        html2pdf()
-            .from(element)
-            .set({
-                margin: [40, 0.5, 40, 0.5], // top, right, bottom, left
-            })
-            .toPdf()
-            .get('pdf')
-            .then(function(pdf) {
-                const totalPages = pdf.internal.getNumberOfPages();
-                const footerHeight = 30; // Adjust footer height as needed
-                const paragraphSpacing = 10; // Adjust paragraph spacing as needed
-                const pageWidth = pdf.internal.pageSize.getWidth();
-                const pageHeight = pdf.internal.pageSize.getHeight();
-
-                // Loop through each page
-                for (let i = 1; i <= totalPages; i++) {
-                    pdf.setPage(i);
-                    pdf.setFontSize(12);
-                    pdf.setTextColor(100);
-                    
-                    // Add space before footer
-                    pdf.text('', 0, pageHeight - footerHeight - paragraphSpacing);
-                    
-                    // Add footer text
-                    pdf.text('Page ' + i + ' of ' + totalPages, pageWidth / 2, pageHeight - footerHeight, {
-                        align: 'center'
-                    });
-                    
-                    // Add space after footer
-                    pdf.text('', 0, pageHeight - footerHeight * 2 - paragraphSpacing * 2);
-
-                    // Convert image links to PDF
-                    const imageElements = document.querySelectorAll('img');
-                    let yPos = 40; // Initial Y position
-                    imageElements.forEach((imgElement) => {
-                        const imgSrc = imgElement.getAttribute('src');
-                        if (imgSrc.startsWith('http') || imgSrc.startsWith('data:image')) {
-                            const img = new Image();
-                            img.onload = function() {
-                                const imgWidth = img.width / 4; // Adjust image width
-                                const imgHeight = img.height / 4; // Adjust image height
-                                pdf.addImage(img, 'JPEG', 10, yPos, imgWidth, imgHeight); // Adjust position and size as needed
-                                yPos += imgHeight + 10; // Update Y position for next image
-                            };
-                            img.src = imgSrc;
-                        }
-                    });
-                }
-            })
-            .save('@smg_ceo_office.pdf');
-    });
-
-    // Rest of your code...
-});
-
-
-
-
-
-
-
-
-
-
-
-        function addMember() {
-            const memberName = document.getElementById("memberName").value;
-            const registrationNumber = document.getElementById("registrationNumber").value;
-            if (!memberName || !registrationNumber) {
-                alert("Please fill in both the member name and registration number.");
-                return;
-            }
-
-            const table = document.getElementById("memberTable");
-            const row = table.insertRow(-1);
-            row.insertCell(0).textContent = memberName;
-            row.insertCell(1).textContent = registrationNumber;
-
-            // Clear the input fields
-            document.getElementById("memberName").value = "";
-            document.getElementById("registrationNumber").value = "";
-        }
-
-        function reviewInformation() {
-            // Retrieve values from the form
-            const cause = $('#cause').val();
-            const muda = $('#muda').val();
-            const schoolName = $('#schoolName').val();
-            const date = $('#date').val();
-            const groupNumber = $('#groupNumber').val();
-            const subjectCode = $('#subjectCode').val();
-            const subjectName = $('#subjectName').val();
-            const lectureName = $('#lectureName').val();
-            const is = $('#is').val();
-            const reference = $('#reference').val();
-
-             // Update image based on selected school
-     const imageSrc = getImageSrcForSchool(schoolName);
-    $('#schoolImage').html(`<img src="${imageSrc}" alt="${schoolName} Image">`);
-    
-
-            // Display values in the review section
-            $('#reviewCause').text(cause);
-            $('#reviewMuda').text(muda);
-            $('#reviewSchoolName').text(schoolName);
-            $('#reviewDate').text(date);
-            $('#reviewGroupNumber').text(groupNumber);
-            $('#reviewSubjectCode').text(subjectCode);
-            $('#reviewSubjectName').text(subjectName);
-            $('#reviewLectureName').text(lectureName);
-            $('#reviewIs').text(is);
-            $('#reviewReference').text(reference);
-
-            // Display values in the review section for dynamic questions and answers
-            const reviewQuestions = [];
-            const reviewAnswers = [];
-
-       
-
-            // Display values in the review section for the members table
-            const reviewMembersTable = $('#reviewMemberTable');
-            reviewMembersTable.empty(); // Clear the table
-
-            const membersTable = $('#memberTable');
-            const tableHeader = $('<thead><tr><th><b>Group Member</b></th><th><b>Registration Number</b></th></tr></thead>');
-            reviewMembersTable.append(tableHeader);
-
-            membersTable.find('tr:gt(0)').each(function() {
-                const row = $('<tr></tr>');
-                row.append(`<td>${$(this).find('td:eq(0)').text()}</td>`);
-                row.append(`<td>${$(this).find('td:eq(1)').text()}</td>`);
-                reviewMembersTable.append(row);
-            });
-
-            // Hide the form, show the review section
-            $('#Assgignment').hide();
-            $('#reviewAssignment').show();
-        }
-
-
-          
-
-
-
-            function getImageSrcForSchool(schoolName) {
-        switch (schoolName) {
-            case 'TANZANIA INSTITUTE OF ACCOUNTANCY':
-                return 'https://lh3.googleusercontent.com/pw/AP1GczPjC9VdOZ1Ll7CQg49wwXbSvid1r_aDxSGb7ueKCo0OqHJ-zcsZ3wG19uE8MaxH9uvNZCEzjfkqgWTtsKKwG-O4-K-VcnUI-R1pmWibv32-zqTD-jsIOs6aJF4aysQhe_EpMa9V5YKH3CHcqJfnmQ3I=w203-h128-s-no?authuser=0';
-            case 'UNIVERSITY OF DODOMA':
-                return 'https://lh3.googleusercontent.com/pw/AP1GczMYKRZ9PGy_Q6C_uW4r3OODwpgogy8cumrnUAMfno2dE2rWZOQR1ErdOyDJDx7mWNSjhdf_Niyct8QqBST6kXKCYymz4fxjzNPgiUbiGxN4k1ofn9_Nl4WMfu2BjfRvGp6RA1cJiY1uFTe7N2BbdNTx=w553-h554-s-no?authuser=0';
-            case 'UNIVERSITY OF DAR ES SALAAM':
-                return 'https://lh3.googleusercontent.com/pw/AP1GczPBhvGzcK5P0y-Ra8H2T9Y_FdOOCYyVtpnNaH9cXdZZt11-Afd5WYosA4wgzssbKhievqA7gZlIfIZLdaHXOntXu7a2DCCtEh-HGpwAKAUz6rSPxFdyVXl3riI6KsCxKAH0pHrAjb1YVuXslayXHncZ=w545-h563-s-no?authuser=0';
-            case 'DUCE':
-                return 'path_to_duce_image.jpg';
-            case 'NIT':
-                return 'path_to_nit_image.jpg';
-            case 'CBE':
-                return 'path_to_cbe_image.jpg';
-            default:
-                return 'default_image.jpg'; // Default image if school not found
-        }
-    }
-
-    // Call reviewInformation function on change of schoolName select
-    $('#schoolName').change(reviewInformation);
-
-    // Call reviewInformation function initially to populate review section
-    reviewInformation();
-
-
-
-</script>
    <script src="hello.js"></script>
 
 
@@ -1096,4 +920,3 @@ $(document).ready(() => {
 
 </body>
 </html>
-
