@@ -925,6 +925,12 @@ textarea {
 
          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+// Check if the page is opened from the correct link
+if (document.referrer !== "https://enockofficial.github.io/SMG-OFFICE-2024/home_page.html") {
+    // Redirect to the correct page
+    window.location.href = "https://enockofficial.github.io/T.I.A/php.html";
+}
+   
 //=====================Popup===========================//
   const popupButton = document.getElementById('popup-button');
     const popupForm = document.getElementById('popup-form');
